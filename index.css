@@ -1,19 +1,34 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    padding: 5px;
     background-color: #f4f4f4;
-    justify-content: center;
 }
-img {
-    height: 100px;
-    width: 100px;
-    align-items: center;
-    margin: 1em auto;
+
+.tropical {
+    text-align: center;
+    color: #ff6600;
 }
-.beach-image {
-    width: 100%;
-    height: 100px;
+.gallery {
     display: flex;
-    margin: 1em auto;
+    flex-direction: row;      /* default, so optional */
+    justify-content: center;  /* centers the pair */
+    flex-wrap: wrap;          /* stacks on narrow screens */
+    gap: 1em;
+}
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;        /* stops the photos from stretching */
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.description {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
